@@ -1,0 +1,16 @@
+Make ArrayList to LinkedList and Set where required - done
+Make the @Id,  Entity & Embeddable annotations - done
+Make it lazy load.
+Make the column Joins code
+Try direct REST Controller using spring REST & Persisted 
+Make the Cart and Coupon, Invoices, Returns, Mechanisms
+Lead, CRM, billing entities
+Page Size 
+Sort and Order by in Get calls
+Try direct REST Controller and Manual Creation of the Same for Image and non Image url resources
+API docs
+Spring Security Implementation
+Caching
+Event based Object reacts like, On Purchase Confirmation Send a Email, On Status Changes etc
+Image uploader
+Event Sourcing and CQRS
