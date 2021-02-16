@@ -4,13 +4,14 @@ import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import lombok.Data;
 
@@ -23,7 +24,8 @@ public class OrderDetails {
 	private Long id;
 	@OneToOne
 	private Product product;
-	private String description;
+	@Column(columnDefinition = "description")
+	private String detailsDescription;
 	private int quantity;
 	private BigDecimal price;
 	private String unitOfMeasurement;

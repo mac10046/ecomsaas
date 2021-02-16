@@ -19,6 +19,8 @@ public class Discount {
 		if (isPercent) {
 			if (figure.floatValue() > 100.0)
 				throw new ValidationException("Discount percentage cannot be greater than 100");
+			if (figure.floatValue() < 0)
+				throw new ValidationException("Discount percentage cannot be less than zero");
 		}
 	}
 

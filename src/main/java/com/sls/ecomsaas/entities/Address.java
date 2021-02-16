@@ -1,18 +1,25 @@
 package com.sls.ecomsaas.entities;
 
-import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import lombok.Data;
 
 @Data
-@Embeddable
+@Entity
 public class Address {
-	
-	private String city;
-	private String state;
-	private String country;
-	private String street;
-	private String pincode;
-	private String premise;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	Long id;
+	String city;
+	String state;
+	String country;
+	String street;
+	String pincode;
+	String premise;
+	String landmark;
 
 }
